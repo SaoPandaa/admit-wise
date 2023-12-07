@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
-import {logo} from 'images'; 
+import logo from '../Layout/images/logo.png'; 
 const Header = () => {
   return (
     <>
@@ -12,8 +12,9 @@ const Header = () => {
           <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
             <Link className="navbar-brand">
               <img
+                className="id-logo"
                 alt=""
-                src="../images/logo.png"
+                src={logo}
               />
             </Link>
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
